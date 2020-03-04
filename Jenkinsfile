@@ -8,7 +8,7 @@ pipeline {
                 sh './jenkins/build/build.sh'
             }
 	    post {
-	    	succes {
+	    	success {
 		    archiveArtifacs artifacs: 'java-app/target/*.jar', fingerprint: true
 		}
 	    }
