@@ -9,7 +9,7 @@ pipeline {
             }
 	    post {
 	    	success {
-		    archiveArtifacs artifacs: 'java-app/target/*.jar', fingerprint: true
+		    archiveArtifacts artifacts: 'java-app/target/*.jar', fingerprint: true
 		}
 	    }
         }
