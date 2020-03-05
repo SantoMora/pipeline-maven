@@ -10,7 +10,7 @@ MOUNT="Mount/image.tar"
 
 
 echo "*** Saving Image ***"
-docker save -o ~/jenkins/$MOUNT $IMAGE
+docker save -o ~/$MOUNT $IMAGE
 echo "*** Loading image ***"
 ssh docker@192.168.99.100 "docker load -i ~/$MOUNT && 
     echo '*** Tagging image ***' &&
